@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&family=Manjari:wght@700&display=swap");
+
+.fuente-1 {
+  font-family: "Manjari", sans-serif;
+}
+.funete-1 h1 {
+  font-weight: bold;
+}
+
+.fuente-2 {
+  font-family: "DM Sans", sans-serif;
+}
+
+.fuente-btn {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.img-custom {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-mid-section {
+  background-image: url("../../public/pic-section-4/img-1.png");
+  background-size: cover;
+}
+
+.linea {
+  color: white;
+  width: 200px;
+}
+
+a img {
+  display: inline-block;
+}
+
+.espacio-renglon {
+  line-height: 1;
+}
+
+.sombra-letra {
+  text-shadow: 1px 2px 0 #000;
+}
+
+.linea-2 {
+  width: 10vh;
+  border-color: #315d6e;
+  border-width: 2px;
+}
+
+.linea-3 {
+  width: 63vw;
+  border-color: #315d6e;
+  border-width: 2px;
+}
+
+.grid-manual {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* justify-content: center;
+  align-items: center; */
+  gap: 10px;
+}
