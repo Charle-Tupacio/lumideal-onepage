@@ -1,4 +1,6 @@
 import React from "react";
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Section8() {
   return (
@@ -13,27 +15,15 @@ function Section8() {
             />
             <hr className="rotate-90 linea-2 max-md:hidden" />
           </div>
-          <div className="flex max-md:mb-4 items-center gap-4 ">
+          <div className="flex max-md:mb-4 items-center justify-center gap-4 ">
             <a href="https://wa.link/ybulep" target="_blank">
-              <img
-                src="/pic-section-7/img-wsp-vec.png"
-                alt="icono-whatsapp"
-                className="h-9"
-              />
+              <BsWhatsapp size={30} />
             </a>
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
-              <img
-                src="/pic-section-7/img-ig-vec.png"
-                alt="icono-instagram"
-                className="h-8"
-              />
+              <BsInstagram size={30} />
             </a>
             <a href="mailto:contacto@lumideal.com.ar" target="_blank">
-              <img
-                src="/pic-section-7/img-mail-vec.png"
-                alt="icono-mail"
-                className="h-8"
-              />
+              <HiOutlineMail size={40} />
             </a>
           </div>
           <div className=" max-md:flex max-md:flex-col max-md:items-center  md:space-x-12">

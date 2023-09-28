@@ -5,9 +5,6 @@ import React from "react";
 //   DropdownToggle,
 //   DropdownMenu,
 //   DropdownItem,
-// } from "@tailwindcss/react";
-import { TiThMenu } from "react-icons/ti";
-import { ImMenu } from "react-icons/im";
 import { HiMenu } from "react-icons/hi";
 
 function BurgerMenu() {
@@ -21,8 +18,6 @@ function BurgerMenu() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        {/* <TiThMenu size={40} className=" md:hidden" /> */}
-        {/* <ImMenu size={50} className=" md:hidden" /> */}
         <HiMenu size={50} className=" md:hidden" />
       </button>
     </div>
