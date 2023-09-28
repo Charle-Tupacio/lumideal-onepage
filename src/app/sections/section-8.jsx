@@ -3,17 +3,17 @@ import React from "react";
 function Section8() {
   return (
     <div>
-      <section className="w-full h-[20vh] flex items-center justify-center">
-        <div className=" flex items-center justify-center gap-40">
-          <div className=" flex items-center justify-center ">
+      <section className="w-full max-md:h-[30vh] h-[20vh] flex items-center justify-center">
+        <div className=" flex max-md:flex-col items-center justify-center md:gap-40">
+          <div className=" flex items-center max-md:mb-4 justify-center ">
             <img
               src="/pic-final-section/logo-negro-lumi.png"
               alt="Logo negro lumideal"
               className="h-28 "
             />
-            <hr className="rotate-90 linea-2" />
+            <hr className="rotate-90 linea-2 max-md:hidden" />
           </div>
-          <div className="flex items-center gap-4 ">
+          <div className="flex max-md:mb-4 items-center gap-4 ">
             <a href="https://wa.link/ybulep" target="_blank">
               <img
                 src="/pic-section-7/img-wsp-vec.png"
@@ -36,7 +36,7 @@ function Section8() {
               />
             </a>
           </div>
-          <div className=" space-x-12">
+          <div className=" max-md:flex max-md:flex-col max-md:items-center  md:space-x-12">
             <a
               href="https://wa.link/ybulep"
               target="_blank"

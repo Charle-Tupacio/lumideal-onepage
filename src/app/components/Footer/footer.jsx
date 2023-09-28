@@ -3,9 +3,8 @@ import "../../style.css";
 
 function Footer() {
   return (
-    <footer className=" bg-[#315D6E] h-20 w-full flex space-x-5 items-center justify-center">
-      <p>©Copyright Lumideal . 2023</p>
-      <p>TuupaStyle T-lechea</p>
+    <footer className=" bg-[#315D6E] h-20 w-full flex items-center justify-center">
+      <p className=" text-xs">©Copyright Lumideal . 2023</p>
     </footer>
   );
 }
