@@ -3,42 +3,44 @@ import React from "react";
 function Section1() {
   return (
     <div>
-      <section className="md:h-[800px] h-[400px] w-full flex bg-cover bg-[url('img/bg-section-1.png')] relative  bg-center">
+      <section className="md:h-[92vh] h-[75vh] w-full flex bg-cover bg-[url('img/bg-section-1.png')] relative  bg-center">
         <div className="flex flex-col w-full h-full justify-center items-center">
           {/* texto */}
           <div className="flex flex-col w-[90vw] md:w-[50vw]">
-            <h1 className="md:text-[6rem] text-[3rem] fuente-1 md:mb-16 mb-2 espacio-renglon sombra-letra">
-              APASIONADOS POR LA ILUMINACIÓN
+            <h1 className="md:text-[6rem] text-[2.7rem] fuente-1 mb-2 pr-6 espacio-renglon sombra-letra">
+              SOLUCIONES SUSTENTABLES
             </h1>
             <p className="fuente-1 text-[1rem] md:text-[2rem] sombra-letra">
               DISFRUTÁ DE ENERGÍA SOLAR Y REDUCÍ COSTOS
             </p>
             {/* boton */}
-            <button className="btn bg-[#009285] px-2 w-[250px] h-[45px] text-[1rem] max-md:mt-[2vh] md:w-[300px] md:h-[60px] md:text-[1.2rem] fuente-2 rounded-full">
-              SOLICITÁ PRESUPUESTO
-            </button>
+            <a href="#contacto">
+              <button className="btn bg-[#009285] px-2 w-[250px] h-[45px] text-[1rem] max-md:mt-[2vh] md:w-[300px] md:h-[60px] md:text-[1.2rem] fuente-2 rounded-full">
+                SOLICITÁ PRESUPUESTO
+              </button>
+            </a>
           </div>
           {/* iconos  */}
-          <div className="flex items-center justify-between space-x-4 max-md:mt-12 md:absolute md:bottom-8 md:right-10 ">
+          <div className="flex max-md:flex-col max-sm:space-y-2 items-center justify-center  md:space-x-4 md:opacity-70 md:hover:opacity-100 z-50 fixed md:bottom-8 bottom-[15%] md:right-10 left-[90vw]">
             <a href="https://wa.link/ybulep" target="_blank">
               <img
                 src="Icono-whatsapp.png"
                 alt="icono whatsapp"
-                className="md:w-[4vw] w-[10vw]"
+                className="md:w-[4vw] w-[8vw]"
               />
             </a>
             <a href="mailto:contacto@lumideal.com.ar" target="_blank">
               <img
                 src="Icono-mail.png"
                 alt="icono whatsapp"
-                className="md:w-[4vw] w-[10vw]"
+                className="md:w-[4vw] w-[8vw]"
               />
             </a>
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <img
                 src="Icono-instagram.png"
                 alt="icono whatsapp"
-                className="md:w-[4vw] w-[10vw]"
+                className="md:w-[4vw] w-[8vw]"
               />
             </a>
           </div>

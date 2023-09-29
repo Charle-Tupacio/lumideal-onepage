@@ -5,8 +5,10 @@ function Section7() {
   return (
     <div>
       <section className="bg-black max-md: w-full md:h-[1000px] h-[auto] max-md:mb-10  flex flex-col items-center">
-        <div className="w-full  h-[200px] flex items-center justify-start">
-          <h2 className="text-[2.4rem] ml-[18vw]">SEGUINOS EN INSTAGRAM</h2>
+        <div className="w-full  h-[20vh] flex items-center justify-center md:justify-start">
+          <h2 className="md:text-[2.4rem] text-[1.3rem] md:ml-[18vw]">
+            SEGUINOS EN INSTAGRAM
+          </h2>
         </div>
         <div className="w-full flex items-center justify-center">
           <div className="grid md:grid-cols-3 md:grid-rows-2 grid-cols-2 grid-rows-3 gap-2">

@@ -4,14 +4,14 @@ import BurgerMenu from "../Burger/burger";
 
 function NavBar() {
   return (
-    <nav className="bg-[#000000] md:columns-3 w-full h-[100px] max-md:justify-between   p-0 flex items-center border-b-[2.5px]">
+    <nav className="bg-[#000000] md:columns-3 w-full h-[10vh] max-md:justify-between   p-0 flex items-center border-b-[2.5px]">
       {/* bloque logo */}
       <div className="md:w-3/12 w-28 flex content-center justify-center items-center h-full md:border-r-[2.5px]">
         <a href="/">
           <img
-            src="lumideal-logo.svg"
+            src="/pic-final-section/logo-negro-lumi.png"
             alt="Logo Lumideal"
-            className="h-[100px] max-md:pl-2"
+            className="h-[80px] max-md:pl-2"
           />
         </a>
       </div>

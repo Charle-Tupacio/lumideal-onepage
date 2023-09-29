@@ -5,7 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 function Section8() {
   return (
     <div>
-      <section className="w-full max-md:h-[30vh] h-[20vh] flex items-center justify-center">
+      <section className="w-full max-md:h-[35vh] h-[20vh] flex items-center justify-center">
         <div className=" flex max-md:flex-col items-center justify-center md:gap-40">
           <div className=" flex items-center max-md:mb-4 justify-center ">
             <img
@@ -30,13 +30,13 @@ function Section8() {
             <a
               href="https://wa.link/ybulep"
               target="_blank"
-              className=" text-[1.2rem]"
+              className="text-[0.8rem]  md:text-[1.2rem]"
             >
               (11)2391-2588
             </a>
             <a
               href="mailto:contacto@lumideal.com.ar"
-              className=" text-[1.2rem]"
+              className=" text-[0.8rem] md:text-[1.2rem]"
               target="_blank"
             >
               contacto@lumideal.com.ar

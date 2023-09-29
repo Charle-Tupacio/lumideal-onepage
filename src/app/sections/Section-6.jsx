@@ -1,14 +1,16 @@
 import React from "react";
+import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
+import { AiOutlineMail } from "react-icons/ai";
 
 function Section6() {
   return (
     <div>
       <section
         id="contacto"
-        className=" bg-[#315D6E] w-full md:h-[90vh] h-[140vh]  flex md:columns-2 justify-center"
+        className=" bg-[#315D6E] w-full md:h-[90vh] h-auto max-md:pb-10  flex md:columns-2 max-md:items-center justify-center"
       >
         {/* imagen */}
-        <div className=" w-2/5 h-fill max-md:hidden ">
+        <div className=" w-2/5 h-full max-md:hidden ">
           <img
             src="/pic-formu/img-formu.png"
             alt="imagen panel solar work"
@@ -17,19 +19,29 @@ function Section6() {
         </div>
         <div className=" md:w-3/5 flex flex-col justify-center">
           {/* parte arriba */}
-          <div className=" h-[46vh] w-full flex flex-col pl-20 max-md:pr-10 md:pt-28 pt-12">
-            <h2 className="fuente-2 text-[2rem]">CONTACTATE CON NUESTROS</h2>
-            <h2 className="fuente-2 text-[2rem]">ASESORES COMERCIALES</h2>
-            <a href="https://wa.link/ybulep" className="text-[1.5rem]">
-              (11) 2391-2588
+          <div className=" h-[46vh] w-full flex flex-col md:pl-20 max-md:items-start max-md:pl-4 max-md:justify-center md:pt-28">
+            <h2 className="fuente-2 text-[1.4rem] md:text-[2rem]">
+              CONTACTATE CON NUESTROS
+            </h2>
+            <h2 className="fuente-2 text-[1.4rem] md:text-[2rem]">
+              ASESORES COMERCIALES
+            </h2>
+            <a
+              href="https://wa.link/ybulep"
+              className="md:text-[1.5rem] flex items-center"
+            >
+              <HiMiniDevicePhoneMobile className="mr-2" /> (11) 2391-2588
             </a>
-            <a href="mailto:contacto@lumideal.com.ar" className="text-[1.5rem]">
-              contacto@lumideal.com.ar
+            <a
+              href="mailto:contacto@lumideal.com.ar"
+              className="md:text-[1.5rem] flex items-center"
+            >
+              <AiOutlineMail className="mr-2" /> contacto@lumideal.com.ar
             </a>
             <hr className="md:w-[45vw] w-[70vw] mt-20" />
           </div>
           {/* parte formu */}
-          <div className="h-full w-full flex max-md:flex-col justify-center items-center pl-20">
+          <div className="h-full w-full flex max-md:flex-col justify-center items-center md:pl-20">
             <form className="flex flex-col max-md:mt-8">
               <div className="flex max-md:flex-col md:space-x-2">
                 <div className="flex flex-col md:w-1/2 w-[80vw]">
@@ -62,7 +74,7 @@ function Section6() {
                 <textarea
                   id="message"
                   name="message"
-                  className=" rounded-3xl md:w-[29vw] w-[60vw] max-md:h-[200px] p-3 text-black resize-none h-28"
+                  className=" rounded-3xl md:w-[29vw] w-[60vw] max-md:h-[20vh] p-3 text-black resize-none h-28"
                 />
               </div>
               <button
@@ -73,9 +85,11 @@ function Section6() {
               </button>
             </form>
             <div className=" max-md:mt-4 px-6">
-              <h3 className="text-[1.6rem]">LUMIDEAL</h3>
-              <p className="text-[1.1rem]">Hacé tu solicitud de presupuesto</p>
-              <p className="text-[1.1rem]">
+              <h3 className=" text-[1.3rem] md:text-[1.6rem]">LUMIDEAL</h3>
+              <p className=" text-[0.8rem] md:text-[1.1rem]">
+                Hacé tu solicitud de presupuesto
+              </p>
+              <p className="text-[0.8rem] md:text-[1.1rem]">
                 Contactanos y despejá tus dudas, estaremos contestandote a la
                 brevedad
               </p>
