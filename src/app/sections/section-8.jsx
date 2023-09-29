@@ -16,7 +16,7 @@ function Section8() {
             <hr className="rotate-90 linea-2 max-md:hidden" />
           </div>
           <div className="flex max-md:mb-4 items-center justify-center gap-4 ">
-            <a href="https://wa.link/ybulep" target="_blank">
+            <a href="https://wa.link/n3i4ut" target="_blank">
               <BsWhatsapp size={30} />
             </a>
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
@@ -28,7 +28,7 @@ function Section8() {
           </div>
           <div className=" max-md:flex max-md:flex-col max-md:items-center  md:space-x-12">
             <a
-              href="https://wa.link/ybulep"
+              href="https://wa.link/n3i4ut"
               target="_blank"
               className="text-[0.8rem]  md:text-[1.2rem]"
             >

@@ -12,7 +12,7 @@ import Section8 from "./sections/section-8";
 
 export default function Home() {
   return (
-    <main className="container-none mx-auto flex-col m-0">
+    <main className="container-none w-full mx-auto flex-col m-0">
       <NavBar />
       {/* seccion 1 (logo e links a redes) */}
       <Section1 />

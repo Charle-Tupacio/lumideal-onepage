@@ -47,7 +47,7 @@ function Section5() {
             renovable
           </p>
           <img
-            src="/pic-cards/img-card-lumideal3.png"
+            src="/pic-cards/img-card-3.png"
             alt=""
             className="w-full h-[70%] rounded-b-xl object-cover"
           />

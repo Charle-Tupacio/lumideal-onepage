@@ -27,7 +27,7 @@ function Section6() {
               ASESORES COMERCIALES
             </h2>
             <a
-              href="https://wa.link/ybulep"
+              href="https://wa.link/n3i4ut"
               className="md:text-[1.5rem] flex items-center"
             >
               <HiMiniDevicePhoneMobile className="mr-2" /> (11) 2391-2588
