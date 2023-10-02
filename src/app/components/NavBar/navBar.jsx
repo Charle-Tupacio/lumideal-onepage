@@ -2,7 +2,6 @@
 
 import React from "react";
 import "../../style.css";
-import BurgerMenu from "../Burger/burger";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import Link from "next/link";
@@ -41,7 +40,7 @@ function NavBar() {
       <div className="md:w-3/12  h-full">
         <div
           onClick={handleNav}
-          className=" flex items-center h-full md:hidden"
+          className=" flex items-center h-full cursor-pointer md:hidden"
         >
           <HiMenu size={50} className={menuOpen ? " opacity-50" : ""} />
         </div>
@@ -49,7 +48,7 @@ function NavBar() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-[#000000c2] p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-[#000000f7] p-10 ease-in duration-500"
             : "fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500"
         }
       >
@@ -59,23 +58,40 @@ function NavBar() {
         >
           <HiX size={25} />
         </div>
-        <div className="flex flex-col text-[1.5rem] justify-center space-y-12 h-full">
-          <ul>
-            <Link href="#nosotros">
-              <li>Nosotros</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link href="#productos">
-              <li>Nuestros Productos</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link href="#contacto">
-              <li>Contacto</li>
-            </Link>
-          </ul>
-        </div>
+        <ul className=" flex flex-col h-[70%] justify-center">
+          <Link href="/">
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer text-xl fuente-2"
+            >
+              HOME
+            </li>
+          </Link>
+          <Link href="#nosotros">
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer text-xl fuente-2 "
+            >
+              NOSOTROS
+            </li>
+          </Link>
+          <Link href="#productos">
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer text-xl fuente-2"
+            >
+              NUESTROS PRODUCTOS
+            </li>
+          </Link>
+          <Link href="#contacto">
+            <li
+              onClick={() => setMenuOpen(false)}
+              className="py-4 cursor-pointer text-xl fuente-2"
+            >
+              CONTACTO
+            </li>
+          </Link>
+        </ul>
       </div>
     </nav>
   );
