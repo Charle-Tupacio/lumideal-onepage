@@ -13,7 +13,7 @@ function Section3() {
           <img
             src="pic-section-3/logo-4-section3.png"
             alt=""
-            className="absolute bottom-[60%] right-[10%] max-md:right-0 max-md:bottom-[70%]"
+            className="absolute bottom-[60%] right-[10%] max-md:right-0 max-md:bottom-[70%] max-md:h-[18vh]"
           />
         </div>
       </section>
