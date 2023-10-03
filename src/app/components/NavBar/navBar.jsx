@@ -48,7 +48,7 @@ function NavBar() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-[#000000f7] p-10 ease-in duration-500"
+            ? "fixed left-0 z-[100] top-0 w-[100%] md:hidden h-screen bg-[#000000f7] p-10 ease-in duration-500"
             : "fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500"
         }
       >
@@ -58,7 +58,16 @@ function NavBar() {
         >
           <HiX size={25} />
         </div>
-        <ul className=" flex flex-col h-[70%] justify-center">
+        <div className="flex w-full mt-20 items-center justify-center ">
+          <Link onClick={() => setMenuOpen(false)} href="/">
+            <img
+              src="lumideal-logo.png"
+              alt="Logo Lumideal"
+              className="h-[150px]"
+            />
+          </Link>
+        </div>
+        <ul className=" flex flex-col h-[50%] justify-center">
           <Link href="/">
             <li
               onClick={() => setMenuOpen(false)}

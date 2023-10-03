@@ -9,6 +9,7 @@ function Section7() {
             SEGUINOS EN INSTAGRAM
           </h2>
         </div>
+        {/* grid  */}
         <div className="w-full flex items-center justify-center">
           <div className="grid grid-cols-3 grid-rows-2 gap-2">
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
