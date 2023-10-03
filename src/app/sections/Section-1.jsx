@@ -7,10 +7,10 @@ function Section1() {
         <div className="flex flex-col w-full h-full justify-center items-center">
           {/* texto */}
           <div className="flex flex-col w-[90vw] md:w-[50vw]">
-            <h1 className="md:text-[6rem] text-[2.7rem] fuente-1 max-md:mb-2 pr-6 espacio-renglon sombra-letra">
+            <h1 className="md:text-[6rem] text-[2.7rem] fuente-1 max-md:mb-2 pr-6 espacio-renglon ">
               SOLUCIONES SUSTENTABLES
             </h1>
-            <p className="fuente-1 text-[1rem] md:text-[2.6rem] md:pr-56 sombra-letra">
+            <p className="fuente-1 text-[1rem] md:text-[2.6rem] md:pr-56 ">
               DISFRUTÁ DE ENERGÍA SOLAR Y REDUCÍ COSTOS
             </p>
             {/* boton */}
@@ -21,7 +21,7 @@ function Section1() {
             </a>
           </div>
           {/* iconos  */}
-          <div className="flex max-md:flex-col max-sm:space-y-2 items-center justify-center opacity-100  md:space-x-4 md:opacity-70 md:hover:opacity-100 z-50 fixed md:bottom-8 bottom-[15%] md:left-[84vw]  left-[90vw]">
+          <div className="flex max-md:flex-col max-md:space-y-2 items-center justify-center opacity-100  md:space-x-4 md:opacity-70 md:hover:opacity-100 z-50 fixed md:bottom-8 bottom-[15%] md:left-[84vw]  left-[90vw]">
             <a href="https://wa.link/n3i4ut" target="_blank">
               <img
                 src="Icono-whatsapp.png"
