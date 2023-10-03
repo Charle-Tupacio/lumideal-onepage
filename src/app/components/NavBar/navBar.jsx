@@ -20,7 +20,7 @@ function NavBar() {
           <img
             src="/pic-final-section/logo-negro-lumi.png"
             alt="Logo Lumideal"
-            className="h-[80px] max-md:pl-2"
+            className="h-[10vh] max-md:pl-2"
           />
         </a>
       </div>
@@ -40,9 +40,9 @@ function NavBar() {
       <div className="md:w-3/12  h-full">
         <div
           onClick={handleNav}
-          className=" flex items-center h-full cursor-pointer md:hidden"
+          className=" flex items-center mr-4 h-full cursor-pointer md:hidden"
         >
-          <HiMenu size={50} className={menuOpen ? " opacity-50" : ""} />
+          <HiMenu size={30} className={menuOpen ? " opacity-50" : ""} />
         </div>
       </div>
       <div
