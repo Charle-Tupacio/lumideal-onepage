@@ -61,3 +61,12 @@
   /* height: 70vh;
   width: 500px; */
 }
+
+.escondeme-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.escondeme-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -9,6 +9,7 @@ import Section5 from "./sections/Section-5";
 import Section6 from "./sections/Section-6";
 import Section7 from "./sections/Section-7";
 import Section8 from "./sections/section-8";
+import Formu from "./components/Form/form";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Section7 />
       {/* section 8 fondo */}
       <Section8 />
+      {/* <Formu /> */}
       <Footer />
     </main>
   );

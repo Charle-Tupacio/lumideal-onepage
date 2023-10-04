@@ -1,8 +1,28 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { AiOutlineMail } from "react-icons/ai";
 
 function Section6() {
+  const [email, setEmail] = useState("");
+  const [nombre, setNombre] = useState("");
+  const [mensaje, setMensaje] = useState("");
+
+  const handleSubmit = () => {
+    // Obtener los datos del formulario
+    const data = {
+      nombre,
+      email,
+      mensaje,
+    };
+
+    // Crear un enlace a la aplicación de correo electrónico
+    const href = `mailto:nachoescobar.ok@gmail.com?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
+
+    // Abrir el enlace en una nueva pestaña
+    window.open(href, "_blank");
+  };
   return (
     <div>
       <section
@@ -42,7 +62,7 @@ function Section6() {
           </div>
           {/* parte formu */}
           <div className="h-full w-full flex max-md:flex-col justify-center items-center md:pl-20">
-            <form className="flex flex-col max-md:mt-8">
+            <form onSubmit={handleSubmit} className="flex flex-col max-md:mt-8">
               <div className="flex max-md:flex-col md:space-x-2">
                 <div className="flex flex-col md:w-1/2 w-[80vw]">
                   <label htmlFor="name" className="ml-2  text-[1.3rem]">
@@ -50,8 +70,9 @@ function Section6() {
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    name="nombre"
+                    value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
                     className=" w-[60vw] md:w-full rounded-full text-black px-3 h-10 max-md:"
                   />
                 </div>
@@ -61,8 +82,9 @@ function Section6() {
                   </label>
                   <input
                     type="email"
-                    id="email"
                     name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="md:w-full w-[60vw] text-black rounded-full px-3 h-10"
                   />
                 </div>
@@ -72,9 +94,10 @@ function Section6() {
                   CONSULTA*
                 </label>
                 <textarea
-                  id="message"
                   name="message"
-                  className=" rounded-3xl md:w-[29vw] w-[60vw] max-md:h-[20vh] p-3 text-black resize-none h-28"
+                  value={mensaje}
+                  onChange={(e) => setMensaje(e.target.value)}
+                  className=" rounded-3xl md:w-[29vw] w-[60vw] max-md:h-[20vh] p-3 text-black resize-none h-28 escondeme-scroll"
                 />
               </div>
               <button
