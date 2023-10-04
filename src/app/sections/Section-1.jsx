@@ -10,10 +10,10 @@ function Section1() {
             <h1 className="md:text-[6rem] text-[2.7rem] fuente-1 max-md:mb-2 pr-6 espacio-renglon ">
               SOLUCIONES SUSTENTABLES
             </h1>
-            <p className="fuente-1 text-[1rem] md:text-[2.6rem] md:pr-56 ">
+            <p className="fuente-1 text-[1rem] md:text-[2rem] md:pr-56 ">
               DISFRUTÁ DE ENERGÍA SOLAR
             </p>
-            <p className="fuente-1 text-[1rem] md:text-[2.6rem] md:pr-56 ">
+            <p className="fuente-1 text-[1rem] md:text-[2rem] md:pr-56 ">
               Y REDUCÍ COSTOS
             </p>
             {/* boton */}
