@@ -63,7 +63,7 @@ function NavBar() {
             <img
               src="lumideal-logo.png"
               alt="Logo Lumideal"
-              className="h-[150px]"
+              className="h-[10vh]"
             />
           </Link>
         </div>

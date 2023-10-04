@@ -18,7 +18,7 @@ function Section6() {
     };
 
     // Crear un enlace a la aplicación de correo electrónico
-    const href = `mailto:nachoescobar.ok@gmail.com?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
+    const href = `mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
 
     // Abrir el enlace en una nueva pestaña
     window.open(href, "_blank");
@@ -27,7 +27,7 @@ function Section6() {
     <div>
       <section
         id="contacto"
-        className=" bg-[#315D6E] w-full md:h-[90vh] h-auto max-md:pb-10  flex md:columns-2 max-md:items-center justify-center"
+        className=" bg-[#315D6E] w-full  h-auto max-md:pb-10  flex md:columns-2 max-md:items-center justify-center"
       >
         {/* imagen */}
         <div className=" w-2/5 h-full max-md:hidden ">
@@ -39,7 +39,7 @@ function Section6() {
         </div>
         <div className=" md:w-3/5 flex flex-col justify-center">
           {/* parte arriba */}
-          <div className=" h-[46vh] w-full flex flex-col md:pl-20 max-md:items-start max-md:pl-4 max-md:justify-center md:pt-28">
+          <div className=" md:h-[46vh] h-auto pt-10 w-full flex flex-col md:pl-20 max-md:items-start max-md:pl-10 max-md:justify-center md:pt-28">
             <h2 className="fuente-2 text-[1.4rem] md:text-[2rem]">
               CONTACTATE CON NUESTROS
             </h2>
@@ -58,7 +58,7 @@ function Section6() {
             >
               <AiOutlineMail className="mr-2" /> contacto@lumideal.com.ar
             </a>
-            <hr className="md:w-[45vw] w-[70vw] mt-20" />
+            <hr className="md:w-[45vw] w-[70vw] md:mt-20 mt-4 max-md:hidden" />
           </div>
           {/* parte formu */}
           <div className="h-full w-full flex max-md:flex-col justify-center items-center md:pl-20">
@@ -107,7 +107,7 @@ function Section6() {
                 ENVIAR
               </button>
             </form>
-            <div className=" max-md:mt-4 px-6">
+            <div className=" max-md:mt-4 max-md:pl-10 px-6">
               <h3 className=" text-[1.3rem] md:text-[1.6rem]">LUMIDEAL</h3>
               <p className=" text-[0.8rem] md:text-[1.1rem]">
                 Hacé tu solicitud de presupuesto

@@ -11,7 +11,7 @@ function Section8() {
             <img
               src="/pic-final-section/logo-negro-lumi.png"
               alt="Logo negro lumideal"
-              className="h-28 "
+              className="h-[10vh] "
             />
             <hr className="rotate-90 linea-2 max-md:hidden" />
           </div>
