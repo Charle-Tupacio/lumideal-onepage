@@ -2,7 +2,7 @@ import React from "react";
 
 function Section4() {
   return (
-    <div>
+    <div className=" max-md:hidden">
       <section className="bg-blue-600">
         <div className="flex w-full md:justify-center h-[600px] max-md:h-[50vh] md:columns-3  max-md:overflow-x-scroll scroll-auto">
           <img

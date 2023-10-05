@@ -18,7 +18,7 @@ function Section6() {
     };
 
     // Crear un enlace a la aplicación de correo electrónico
-    const href = `mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
+    const href = `mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
 
     // Abrir el enlace en una nueva pestaña
     window.open(href, "_blank");
@@ -56,7 +56,7 @@ function Section6() {
               href="mailto:contacto@lumideal.com.ar"
               className="md:text-[1.5rem] flex items-center"
             >
-              <AiOutlineMail className="mr-2" /> contacto@lumideal.com.ar
+              <AiOutlineMail className="mr-2" /> contacto@lumideal.ar
             </a>
             <hr className="md:w-[45vw] w-[70vw] md:mt-20 mt-4 max-md:hidden" />
           </div>

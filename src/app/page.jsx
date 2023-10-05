@@ -10,6 +10,8 @@ import Section6 from "./sections/Section-6";
 import Section7 from "./sections/Section-7";
 import Section8 from "./sections/section-8";
 import Formu from "./components/Form/form";
+import Carouselmd from "./components/Carousel/carousel";
+import Carousel2 from "./components/Carousel/carousel2";
 
 export default function Home() {
   return (
@@ -23,6 +25,9 @@ export default function Home() {
       <Section3 />
       {/* seccion 4 (3 imagenes ilustrativas) */}
       <Section4 />
+      {/* carousel */}
+      {/* <Carouselmd /> */}
+      <Carousel2 />
       {/* seccion 5 (las 3 cards) */}
       <Section5 />
       {/* seccion 6 (formulario de contacto) */}
@@ -31,7 +36,7 @@ export default function Home() {
       <Section7 />
       {/* section 8 fondo */}
       <Section8 />
-      {/* <Formu /> */}
+      <Formu />
       <Footer />
     </main>
   );

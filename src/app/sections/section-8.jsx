@@ -22,7 +22,7 @@ function Section8() {
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <BsInstagram size={30} />
             </a>
-            <a href="mailto:contacto@lumideal.com.ar" target="_blank">
+            <a href="mailto:contacto@lumideal.ar" target="_blank">
               <HiOutlineMail size={40} />
             </a>
           </div>
