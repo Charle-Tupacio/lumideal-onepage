@@ -8,6 +8,9 @@ dependencies:
   autoprefixer:
     specifier: 10.4.15
     version: registry.npmmirror.com/autoprefixer@10.4.15(postcss@8.4.29)
+  email:
+    specifier: ^0.2.6
+    version: registry.npmmirror.com/email@0.2.6
   eslint:
     specifier: 8.48.0
     version: registry.npmmirror.com/eslint@8.48.0
@@ -20,9 +23,15 @@ dependencies:
   flowbite-react:
     specifier: ^0.6.4
     version: registry.npmmirror.com/flowbite-react@0.6.4(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
+  fs:
+    specifier: 0.0.1-security
+    version: registry.npmmirror.com/fs@0.0.1-security
   next:
     specifier: 13.4.19
     version: registry.npmmirror.com/next@13.4.19(react-dom@18.2.0)(react@18.2.0)
+  nodemailer:
+    specifier: ^6.9.5
+    version: registry.npmmirror.com/nodemailer@6.9.5
   postcss:
     specifier: 8.4.29
     version: registry.npmmirror.com/postcss@8.4.29
@@ -1120,6 +1129,13 @@ packages:
     version: 1.4.513
     dev: false
 
+  registry.npmmirror.com/email@0.2.6:
+    resolution: {integrity: sha512-SwN1r7cKBBOQMHHM5Poc81Ke/1cWVoSRdE5ineUXIHi+o2zZ68Q/9dsZf+CQuROb1IZIPmWSR2AKhyYZr+Jw9Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/email/-/email-0.2.6.tgz}
+    name: email
+    version: 0.2.6
+    engines: {node: '>= 0.1.92'}
+    dev: false
+
   registry.npmmirror.com/emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/emoji-regex/-/emoji-regex-9.2.2.tgz}
     name: emoji-regex
@@ -1708,6 +1724,12 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs.realpath/-/fs.realpath-1.0.0.tgz}
     name: fs.realpath
     version: 1.0.0
+    dev: false
+
+  registry.npmmirror.com/fs@0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs/-/fs-0.0.1-security.tgz}
+    name: fs
+    version: 0.0.1-security
     dev: false
 
   registry.npmmirror.com/fsevents@2.3.3:
@@ -2596,6 +2618,13 @@ packages:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-releases/-/node-releases-2.0.13.tgz}
     name: node-releases
     version: 2.0.13
+    dev: false
+
+  registry.npmmirror.com/nodemailer@6.9.5:
+    resolution: {integrity: sha512-/dmdWo62XjumuLc5+AYQZeiRj+PRR8y8qKtFCOyuOl1k/hckZd8durUUHs/ucKx6/8kN+wFxqKJlQ/LK/qR5FA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nodemailer/-/nodemailer-6.9.5.tgz}
+    name: nodemailer
+    version: 6.9.5
+    engines: {node: '>=6.0.0'}
     dev: false
 
   registry.npmmirror.com/nopt@6.0.0:

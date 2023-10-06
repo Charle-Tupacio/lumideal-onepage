@@ -12,8 +12,8 @@ const customTheme = {
 function Carousel2() {
   return (
     <>
-      <div className="h-[600px] w-full">
-        <Carousel slide={true} pauseOnHove theme={customTheme}>
+      <div className="h-[600px] w-full md:hidden">
+        <Carousel slide={true} theme={customTheme}>
           <img
             src="/pic-section-4/img-1.png"
             alt="imagen-1"
