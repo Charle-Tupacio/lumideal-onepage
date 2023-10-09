@@ -7,8 +7,8 @@ export default async function handler(req, res) {
     try {
       // Configura el transportador de nodemailer (debes configurar tus propios detalles de SMTP)
       const transporter = nodemailer.createTransport({
-        host: "c1782292.ferozo.com",
-        port: 587,
+        host: "mail.ferozo.com",
+        port: 465,
         secure: false,
         auth: {
           user: "contacto@lumideal.ar",

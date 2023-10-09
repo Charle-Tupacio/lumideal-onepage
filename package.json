@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
-    "email": "^0.2.6",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "flowbite": "^1.8.1",
