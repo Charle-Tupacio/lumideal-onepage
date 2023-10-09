@@ -34,8 +34,8 @@ function Section1() {
             </a>
             <a href="mailto:contacto@lumideal.ar" target="_blank">
               <img
-                src="Icono-mail.png"
-                alt="icono-mail"
+                src="Icono-email.png"
+                alt="icono-email"
                 className="md:w-[4vw] w-[8vw]"
               />
             </a>
