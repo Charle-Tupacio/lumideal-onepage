@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/router";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -27,10 +26,11 @@ function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ formData }),
       });
 
-      if (response.ok) {
+      if (response.status === 200) {
+        setFormData({});
         // Envío exitoso, puedes redirigir o mostrar un mensaje de éxito aquí
         console.log("Exito en el proceso");
       } else {
