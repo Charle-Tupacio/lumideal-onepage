@@ -26,6 +26,9 @@ function ContactForm() {
       if (response.status === 200) {
         // Envío exitoso, puedes redirigir o mostrar un mensaje de éxito aquí
         console.log("Exito en el proceso");
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
         // Manejar errores de envío
         console.error("Error en el envío del formulario");

@@ -32,7 +32,10 @@ function Section1() {
                 className="md:w-[4vw] w-[8vw]"
               />
             </a>
-            <a href="mailto:contacto@lumideal.ar" target="_blank">
+            <a
+              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              target="_blank"
+            >
               <img
                 src="Icono-email.png"
                 alt="icono-email"

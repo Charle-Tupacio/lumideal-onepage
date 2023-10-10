@@ -5,23 +5,39 @@ import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { AiOutlineMail } from "react-icons/ai";
 
 function Section6() {
-  const [email, setEmail] = useState("");
   const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = () => {
-    // Obtener los datos del formulario
-    const data = {
-      nombre,
-      email,
-      mensaje,
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    // Crear un enlace a la aplicación de correo electrónico
-    const href = `mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB ${data.nombre}&body=${data.mensaje}`;
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nombre,
+          email,
+          mensaje,
+        }),
+      });
 
-    // Abrir el enlace en una nueva pestaña
-    window.open(href, "_blank");
+      if (response.status === 200) {
+        // Envío exitoso, puedes redirigir o mostrar un mensaje de éxito aquí
+        console.log("Exito en el proceso");
+        setNombre("");
+        setEmail("");
+        setMensaje("");
+      } else {
+        // Manejar errores de envío
+        console.error("Error en el envío del formulario");
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+    }
   };
   return (
     <div>
@@ -30,16 +46,16 @@ function Section6() {
         className=" bg-[#315D6E] w-full  h-auto max-md:pb-10  flex md:columns-2 max-md:items-center justify-center"
       >
         {/* imagen */}
-        <div className=" w-2/5 h-full max-md:hidden ">
+        <div className=" w-2/5 h-full max-md:hidden">
           <img
             src="/pic-formu/img-formu.png"
             alt="imagen panel solar work"
-            className="w-full h-full object-"
+            className="w-full h-full objet-fit"
           />
         </div>
         <div className=" md:w-3/5 flex flex-col justify-center">
           {/* parte arriba */}
-          <div className=" md:h-[46vh] h-auto pt-10 w-full flex flex-col md:pl-20 max-md:items-start max-md:pl-10 max-md:justify-center md:pt-28">
+          <div className=" md:h-[46vh] h-auto pt-10 w-full flex flex-col md:pl-20 max-md:items-start max-md:pl-10 max-md:justify-center md:pt-20">
             <h2 className="fuente-2 text-[1.4rem] md:text-[2rem]">
               CONTACTATE CON NUESTROS
             </h2>
@@ -53,7 +69,7 @@ function Section6() {
               <HiMiniDevicePhoneMobile className="mr-2" /> (11) 2391-2588
             </a>
             <a
-              href="mailto:contacto@lumideal.com.ar"
+              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
               className="md:text-[1.5rem] flex items-center"
             >
               <AiOutlineMail className="mr-2" /> contacto@lumideal.ar
@@ -72,7 +88,9 @@ function Section6() {
                     type="text"
                     name="nombre"
                     value={nombre}
-                    onChange={(e) => setNombre(e.target.value)}
+                    onChange={(e) => {
+                      setNombre(e.target.value);
+                    }}
                     className=" w-[60vw] md:w-full rounded-full text-black px-3 h-10 max-md:"
                   />
                 </div>
@@ -84,7 +102,9 @@ function Section6() {
                     type="email"
                     name="email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                     className="md:w-full w-[60vw] text-black rounded-full px-3 h-10"
                   />
                 </div>
@@ -96,7 +116,9 @@ function Section6() {
                 <textarea
                   name="message"
                   value={mensaje}
-                  onChange={(e) => setMensaje(e.target.value)}
+                  onChange={(e) => {
+                    setMensaje(e.target.value);
+                  }}
                   className=" rounded-3xl md:w-[29vw] w-[60vw] max-md:h-[20vh] p-3 text-black resize-none h-28 escondeme-scroll"
                 />
               </div>

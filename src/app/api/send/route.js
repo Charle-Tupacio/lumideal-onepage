@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
-  const { name, email, message } = await request.json();
+  const { nombre, email, mensaje } = await request.json();
   try {
     const transporter = nodemailer.createTransport({
       host: "c1782292.ferozo.com",
@@ -15,10 +15,10 @@ export async function POST(request) {
     });
 
     const mailOption = {
-      from: "contacto@lumideal.ar",
+      from: `${nombre} contacto@lumideal.ar`,
       to: "nachoescobar.ok@gmail.com",
       subject: "ENVIADO DESDE LA WEB DE LUMIDEAL",
-      text: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`,
+      text: `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`,
     };
 
     await transporter.sendMail(mailOption);

@@ -22,7 +22,10 @@ function Section8() {
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <BsInstagram size={30} />
             </a>
-            <a href="mailto:contacto@lumideal.ar" target="_blank">
+            <a
+              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              target="_blank"
+            >
               <HiOutlineMail size={40} />
             </a>
           </div>
@@ -35,7 +38,7 @@ function Section8() {
               (11)2391-2588
             </a>
             <a
-              href="mailto:contacto@lumideal.com.ar"
+              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
               className=" text-[0.8rem] md:text-[1.2rem]"
               target="_blank"
             >
