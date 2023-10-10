@@ -14,7 +14,6 @@
     "eslint-config-next": "13.4.19",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.6.4",
-    "fs": "0.0.1-security",
     "next": "13.4.19",
     "nodemailer": "^6.9.5",
     "postcss": "8.4.29",
