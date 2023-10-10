@@ -1,27 +1,37 @@
-// import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import Resend from "resend";
-
-const resend = new Resend("re_brMZ55xh_F8GBm3V85g2H2qxiX2vuCj92");
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
+  const { name, email, message } = await request.json();
   try {
-    const body = await request.emails.send();
-    console.log("body", body);
-    const { email, nombre, mensaje } = body;
-    await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "nachoescobar.ok@gmail.com",
-      subject: `LUMIDEAL WEB CONSULTA DE ${nombre} - ${email}`,
-      text: mensaje,
+    const transporter = nodemailer.createTransport({
+      host: "c1782292.ferozo.com",
+      port: "465",
+      secure: true,
+      auth: {
+        user: "contacto@lumideal.ar",
+        pass: "RxGDj@g5xK",
+      },
     });
 
-    if (data.status === "success") {
-      return NextResponse.json({ message: "Email Successfully Sent!" });
-    }
-    return NextResponse.json(data);
+    const mailOption = {
+      from: "contacto@lumideal.ar",
+      to: "nachoescobar.ok@gmail.com",
+      subjet: "send EMail tutorial",
+      text: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`,
+    };
+
+    await transporter.sendMail(mailOption);
+
+    return NextResponse.json(
+      { message: "Email Sent Succerfully" },
+      { status: 200 }
+    );
   } catch (error) {
-    console.log("error", error);
+    return NextResponse.json(
+      { message: "Failed to Send Email" },
+      { status: 500 }
+    );
   }
 }
 

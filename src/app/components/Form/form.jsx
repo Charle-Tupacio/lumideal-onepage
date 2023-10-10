@@ -3,19 +3,9 @@
 import { useState } from "react";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    mensaje: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,11 +16,14 @@ function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ formData }),
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
       });
 
       if (response.status === 200) {
-        setFormData({});
         // Envío exitoso, puedes redirigir o mostrar un mensaje de éxito aquí
         console.log("Exito en el proceso");
       } else {
@@ -48,23 +41,29 @@ function ContactForm() {
         type="text"
         name="nombre"
         placeholder="Nombre"
-        value={formData.nombre}
-        onChange={handleChange}
+        value={name}
+        onChange={(e) => {
+          setName(e.target.value);
+        }}
         className=" text-black"
       />
       <input
         type="email"
         name="email"
         placeholder="Email"
-        value={formData.email}
-        onChange={handleChange}
+        value={email}
+        onChange={(e) => {
+          setEmail(e.target.value);
+        }}
         className="text-black"
       />
       <textarea
         name="mensaje"
         placeholder="Mensaje"
-        value={formData.mensaje}
-        onChange={handleChange}
+        value={message}
+        onChange={(e) => {
+          setMessage(e.target.value);
+        }}
         className="text-black"
       />
       <button type="submit">Enviar</button>
