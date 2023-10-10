@@ -17,7 +17,7 @@ export async function POST(request) {
     const mailOption = {
       from: "contacto@lumideal.ar",
       to: "nachoescobar.ok@gmail.com",
-      subjet: "send EMail tutorial",
+      subject: "ENVIADO DESDE LA WEB DE LUMIDEAL",
       text: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`,
     };
 
