@@ -14,11 +14,16 @@ export async function POST(request) {
       },
     });
 
+    const msjHtml = `   <h1> Consulta realizada desde la web </h1> <br/>
+    <h3>Nombre: ${nombre}</h3> 
+    <h5> Email: ${email} </h5>
+    <p> Consulta: ${mensaje} </p>`;
+
     const mailOption = {
       from: `${nombre} contacto@lumideal.ar`,
-      to: "nachoescobar.ok@gmail.com",
+      to: "contacto@lumideal.ar",
       subject: "ENVIADO DESDE LA WEB DE LUMIDEAL",
-      text: `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`,
+      html: msjHtml,
     };
 
     await transporter.sendMail(mailOption);

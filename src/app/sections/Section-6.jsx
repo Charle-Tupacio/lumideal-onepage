@@ -85,6 +85,7 @@ function Section6() {
                     NOMBRE *
                   </label>
                   <input
+                    required
                     type="text"
                     name="nombre"
                     value={nombre}
@@ -99,6 +100,7 @@ function Section6() {
                     EMAIL*
                   </label>
                   <input
+                    required
                     type="email"
                     name="email"
                     value={email}
@@ -114,6 +116,7 @@ function Section6() {
                   CONSULTA*
                 </label>
                 <textarea
+                  required
                   name="message"
                   value={mensaje}
                   onChange={(e) => {
