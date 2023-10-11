@@ -28,6 +28,7 @@ function Section6() {
       if (response.status === 200) {
         // Envío exitoso, puedes redirigir o mostrar un mensaje de éxito aquí
         console.log("Exito en el proceso");
+        alert("Enviado con exito");
         setNombre("");
         setEmail("");
         setMensaje("");
@@ -85,7 +86,9 @@ function Section6() {
                     NOMBRE *
                   </label>
                   <input
+                    id="name"
                     required
+                    autoComplete="on"
                     type="text"
                     name="nombre"
                     value={nombre}
@@ -100,7 +103,9 @@ function Section6() {
                     EMAIL*
                   </label>
                   <input
+                    id="email"
                     required
+                    autoComplete="on"
                     type="email"
                     name="email"
                     value={email}
@@ -116,6 +121,7 @@ function Section6() {
                   CONSULTA*
                 </label>
                 <textarea
+                  id="message"
                   required
                   name="message"
                   value={mensaje}

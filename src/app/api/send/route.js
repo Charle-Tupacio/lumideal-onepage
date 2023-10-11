@@ -14,10 +14,10 @@ export async function POST(request) {
       },
     });
 
-    const msjHtml = `   <h1> Consulta realizada desde la web </h1> <br/>
+    const msjHtml = `<h1> Consulta desde <a href="https://lumideal.com.ar" target="_blank" rel="noopener">lumideal.com.ar</a> </h1> <br/>
     <h3>Nombre: ${nombre}</h3> 
     <h5> Email: ${email} </h5>
-    <p> Consulta: ${mensaje} </p>`;
+    <p> Hola LUMIDEAL, les escribo desde la web para consultar por: ${mensaje} </p>`;
 
     const mailOption = {
       from: `${nombre} contacto@lumideal.ar`,
