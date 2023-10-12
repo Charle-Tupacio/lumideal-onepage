@@ -26,13 +26,13 @@ function NavBar() {
       </div>
       {/* bloque links */}
       <div className="w-6/12 max-md:hidden flex space-x-6 content-center justify-center  items-center min-h-full border-r-[2.5px]">
-        <div className="">
+        <div className="text-[0.8rem] xl:text-[1rem]">
           <a href="#nosotros">NOSOTROS</a>
         </div>
-        <div className=" ">
+        <div className="text-[0.8rem] xl:text-[1rem]">
           <a href="#productos">NUESTROS PRODUCTOS</a>
         </div>
-        <div className="">
+        <div className="text-[0.8rem] xl:text-[1rem]">
           <a href="#contacto">CONTACTANOS</a>
         </div>
       </div>

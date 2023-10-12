@@ -9,7 +9,7 @@ function Section5() {
       <div className="flex max-md:flex-col justify-center my-10  gap-6 md:columns-3 m-auto">
         {/* carta 1 */}
         <div className="shadow-xl  hover:shadow-2xl bg-black md:w-[26vw] md:h-[80vh] w-[80vw] h-[600px]  rounded-xl flex flex-col items-center">
-          <h3 className="bg-[#009285]  pt-2 fuente-1 text-[1.2rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
+          <h3 className="bg-[#009285]  pt-2 fuente-1 text-[1rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
             PANELES SOLARES
           </h3>
           <p className="flex h-[15%] text-[0.8rem] text-[#009285] bg-white w-full text-center px-4 justify-center items-center">
@@ -24,7 +24,7 @@ function Section5() {
         </div>
         {/* carta 2 */}
         <div className="shadow-xl hover:shadow-2xl bg-black md:w-[26vw] md:h-[80vh] w-[80vw] h-[600px] rounded-xl flex flex-col items-center">
-          <h3 className="bg-[#009285] pt-2 fuente-1 text-[1.2rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
+          <h3 className="bg-[#009285] pt-2 fuente-1 text-[1rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
             TERMOTANQUES
           </h3>
           <p className="flex h-[15%] text-[#009285] text-[0.8rem] bg-white w-full text-center px-4  justify-center items-center max-md:overscroll-contain">
@@ -39,7 +39,7 @@ function Section5() {
         </div>
         {/* carta 3 */}
         <div className="shadow-xl hover:shadow-2xl bg-black md:w-[26vw] md:h-[80vh] w-[80vw] h-[600px]  rounded-xl flex flex-col items-center">
-          <h3 className="bg-[#009285] pt-2 fuente-1 text-[1.2rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
+          <h3 className="bg-[#009285] pt-2 fuente-1 text-[1rem] w-full rounded-t-xl h-[15%] flex items-center justify-center">
             BOMBAS DE CALOR
           </h3>
           <p className="flex h-[15%] text-[#009285] text-[0.8rem] bg-white w-full text-center px-4 justify-center items-center">

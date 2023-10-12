@@ -5,7 +5,7 @@ function Section7() {
     <div>
       <section className="bg-black max-md: w-full h-auto max-md:mb-10  flex flex-col items-center">
         <div className="w-full  h-[20vh] flex items-center justify-center md:justify-start">
-          <h2 className="md:text-[2.4rem] text-[1.3rem] md:ml-[18vw]">
+          <h2 className="xl:text-[2.4rem] text-[1.3rem] md:ml-[18vw]">
             SEGUINOS EN INSTAGRAM
           </h2>
         </div>
