@@ -11,7 +11,7 @@ function Section7() {
         </div>
         {/* grid  */}
         <div className="w-full flex   items-center justify-center">
-          <div className="grid grid-cols-3 grid-rows-2 gap-2 h-[80vh]">
+          <div className="grid grid-cols-3 grid-rows-2 gap-2 md:h-[80vh]">
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <img
                 src="/pic-section-instagram/image-1.png"
