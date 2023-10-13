@@ -9,7 +9,7 @@ export async function POST(request) {
       port: "465",
       secure: true,
       auth: {
-        user: "contacto@lumideal.ar",
+        user: "contacto@lumideal.com.ar",
         pass: process.env.PASS_MAIL,
       },
     });
