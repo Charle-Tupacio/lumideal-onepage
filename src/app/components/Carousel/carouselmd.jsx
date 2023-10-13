@@ -1,18 +1,6 @@
 "use client";
 import { Carousel } from "flowbite-react";
-
-const customTheme = {
-  scrollContainer: {
-    base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
-    snap: "snap-x",
-  },
-  item: {
-    base: "absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
-    wrapper: "w-full flex-shrink-0 transform cursor-grab snap-center",
-  },
-  // "base": "absolute top-1/2 left-0 block w-full -translate-y-1/2",
-  // "wrapper": "w-3/4 flex-shrink-0 transform cursor-grab snap-center"
-};
+import { customTheme } from "./carouselmd";
 
 function Carouselmd() {
   return (
