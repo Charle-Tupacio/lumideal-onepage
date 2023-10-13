@@ -10,6 +10,7 @@ import Section6 from "./sections/Section-6";
 import Section7 from "./sections/Section-7";
 import Section8 from "./sections/section-8";
 import Carousel2 from "./components/Carousel/carousel2";
+import Carouselmd from "./components/Carousel/carouselmd";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       {/* <Section4 /> */}
       {/* carousel */}
       <Carousel2 />
+      <Carouselmd />
       {/* seccion 5 (las 3 cards) */}
       <Section5 />
       {/* seccion 6 (formulario de contacto) */}
