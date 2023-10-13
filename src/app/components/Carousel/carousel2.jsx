@@ -18,7 +18,7 @@ const customTheme = {
 function Carousel2() {
   return (
     <>
-      <div className="h-[600px] xl:h-[500px] w-full bg-[#E6E0DC] bg-repeat bg-[url('img/bg-patron-sec5.png')] bg-[length:100px_100px] bg-fixed">
+      <div className="h-[500px] max-md:hidden w-full bg-[#E6E0DC] bg-repeat bg-[url('img/bg-patron-sec5.png')] bg-[length:100px_100px] bg-fixed">
         <Carousel slide={true} theme={customTheme}>
           <div className="flex  w-full h-full">
             <img
@@ -49,6 +49,35 @@ function Carousel2() {
               className="w-[50%] h-full object-cover"
             />
           </div>
+        </Carousel>
+      </div>
+      <div className="h-[500px] md:hidden w-full">
+        <Carousel slide={true} theme={customTheme}>
+          <img
+            src="/pic-section-4/img-1.png"
+            alt="imagen-1"
+            className="w-full  h-full object-cover "
+          />
+          <img
+            src="/pic-section-4/img-2.png"
+            alt="imagen-2"
+            className="w-full h-full object-cover"
+          />
+          <img
+            src="/pic-section-4/img-3.png"
+            alt="imagen-3"
+            className="w-full h-full object-cover"
+          />
+          <img
+            src="/pic-formu/img-formu.png"
+            alt="imagen-3"
+            className="w-full h-full object-cover"
+          />
+          <img
+            src="/pic-section-1/bg-section1.png"
+            alt="imagen-3"
+            className="w-full h-full object-cover"
+          />
         </Carousel>
       </div>
     </>
