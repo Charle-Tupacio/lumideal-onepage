@@ -11,8 +11,6 @@ const customTheme = {
     base: "absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
     wrapper: "w-full flex-shrink-0 transform cursor-grab snap-center",
   },
-  // "base": "absolute top-1/2 left-0 block w-full -translate-y-1/2",
-  // "wrapper": "w-3/4 flex-shrink-0 transform cursor-grab snap-center"
 };
 
 function Carousel2() {
@@ -41,12 +39,17 @@ function Carousel2() {
             <img
               src="/pic-formu/img-formu.png"
               alt="imagen-3"
-              className="w-[50%] h-full object-cover"
+              className="w-1/3 h-full object-cover"
             />
             <img
-              src="/pic-section-1/bg-section1.png"
+              src="/pic-section-4/img-4.jpeg"
               alt="imagen-3"
-              className="w-[50%] h-full object-cover"
+              className="w-1/3 h-full object-cover"
+            />
+            <img
+              src="/pic-section-4/img-5.jpeg"
+              alt="imagen-3"
+              className="w-1/3 h-full object-cover"
             />
           </div>
         </Carousel>
