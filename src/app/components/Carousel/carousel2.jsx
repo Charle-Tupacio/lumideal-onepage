@@ -16,7 +16,7 @@ export const customTheme = {
 function Carousel2() {
   return (
     <div className="h-[500px] max-md:hidden w-full bg-[#E6E0DC] bg-repeat bg-[url('img/bg-patron-sec5.png')] bg-[length:100px_100px] bg-fixed">
-      <Carousel slide={true} theme={customTheme}>
+      <Carousel slide={false} theme={customTheme}>
         <div className="flex  w-full h-full">
           <img
             src="/pic-section-4/img-1.png"

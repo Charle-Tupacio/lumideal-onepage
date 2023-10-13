@@ -28,7 +28,17 @@ function Carouselmd() {
             className="w-full h-full object-cover"
           />
           <img
-            src="/pic-section-1/bg-section1.png"
+            src="/pic-section-4/img-4.jpeg"
+            alt="imagen-3"
+            className="w-full h-full object-cover"
+          />
+          <img
+            src="/pic-section-4/img-5.jpeg"
+            alt="imagen-3"
+            className="w-full h-full object-cover"
+          />
+          <img
+            src="/pic-section-4/img-6.jpeg"
             alt="imagen-3"
             className="w-full h-full object-cover"
           />
