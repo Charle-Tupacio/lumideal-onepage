@@ -29,17 +29,17 @@ function Section8() {
               <HiOutlineMail size={40} />
             </a>
           </div>
-          <div className=" max-md:flex max-md:flex-col max-md:items-center  md:space-x-12">
+          <div className=" max-md:flex max-md:flex-col max-md:items-center  xl:space-x-8">
             <a
               href="https://wa.link/n3i4ut"
               target="_blank"
-              className="text-[0.8rem]  md:text-[1.2rem]"
+              className="text-[0.8rem]  xl:text-[1.2rem]"
             >
               (11)2391-2588
             </a>
             <a
               href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
-              className=" text-[0.8rem] md:text-[1.2rem]"
+              className=" text-[0.8rem] xl:text-[1.2rem]"
               target="_blank"
             >
               contacto@lumideal.com.ar

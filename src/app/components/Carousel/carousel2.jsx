@@ -7,28 +7,48 @@ const customTheme = {
     base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
     snap: "snap-x",
   },
+  item: {
+    base: "absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
+    wrapper: "w-full flex-shrink-0 transform cursor-grab snap-center",
+  },
+  // "base": "absolute top-1/2 left-0 block w-full -translate-y-1/2",
+  // "wrapper": "w-3/4 flex-shrink-0 transform cursor-grab snap-center"
 };
 
 function Carousel2() {
   return (
     <>
-      <div className="h-[600px] w-full md:hidden">
+      <div className="h-[600px] xl:h-[500px] w-full bg-[#E6E0DC] bg-repeat bg-[url('img/bg-patron-sec5.png')] bg-[length:100px_100px] bg-fixed">
         <Carousel slide={true} theme={customTheme}>
-          <img
-            src="/pic-section-4/img-1.png"
-            alt="imagen-1"
-            className="w-full h-full object-cover "
-          />
-          <img
-            src="/pic-section-4/img-2.png"
-            alt="imagen-2"
-            className="w-full h-full object-cover"
-          />
-          <img
-            src="/pic-section-4/img-3.png"
-            alt="imagen-3"
-            className="w-full h-full object-cover"
-          />
+          <div className="flex  w-full h-full">
+            <img
+              src="/pic-section-4/img-1.png"
+              alt="imagen-1"
+              className="w-1/3  h-full object-cover "
+            />
+            <img
+              src="/pic-section-4/img-2.png"
+              alt="imagen-2"
+              className="w-1/3 h-full object-cover"
+            />
+            <img
+              src="/pic-section-4/img-3.png"
+              alt="imagen-3"
+              className="w-1/3 h-full object-cover"
+            />
+          </div>
+          <div className="w-full flex h-full">
+            <img
+              src="/pic-formu/img-formu.png"
+              alt="imagen-3"
+              className="w-[50%] h-full object-cover"
+            />
+            <img
+              src="/pic-section-1/bg-section1.png"
+              alt="imagen-3"
+              className="w-[50%] h-full object-cover"
+            />
+          </div>
         </Carousel>
       </div>
     </>

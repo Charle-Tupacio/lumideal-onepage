@@ -3,8 +3,8 @@ import React from "react";
 function Section4() {
   return (
     <div className=" max-md:hidden">
-      <section className="bg-blue-600">
-        <div className="flex w-full md:justify-center h-[600px] max-md:h-[50vh] md:columns-3  max-md:overflow-x-scroll scroll-auto">
+      <section className="">
+        <div className="flex w-full justify-center h-[600px] columns-3  overflow-x-scroll scroll-auto">
           <img
             src="/pic-section-4/img-1.png"
             alt="imagen-1"

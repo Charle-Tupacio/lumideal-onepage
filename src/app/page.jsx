@@ -22,9 +22,8 @@ export default function Home() {
       {/* seccion 3 (3 logos png + 1 flotante) */}
       <Section3 />
       {/* seccion 4 (3 imagenes ilustrativas) */}
-      <Section4 />
+      {/* <Section4 /> */}
       {/* carousel */}
-      {/* <Carouselmd /> */}
       <Carousel2 />
       {/* seccion 5 (las 3 cards) */}
       <Section5 />
