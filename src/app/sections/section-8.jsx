@@ -23,7 +23,7 @@ function Section8() {
               <BsInstagram size={30} />
             </a>
             <a
-              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              href="mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB"
               target="_blank"
             >
               <HiOutlineMail size={40} />
