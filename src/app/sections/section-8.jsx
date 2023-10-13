@@ -38,7 +38,7 @@ function Section8() {
               (11)2391-2588
             </a>
             <a
-              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              href="mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB"
               className=" text-[0.8rem] xl:text-[1.2rem]"
               target="_blank"
             >

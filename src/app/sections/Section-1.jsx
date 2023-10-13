@@ -33,7 +33,7 @@ function Section1() {
               />
             </a>
             <a
-              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              href="mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB"
               target="_blank"
             >
               <img

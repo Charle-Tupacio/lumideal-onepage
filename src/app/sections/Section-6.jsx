@@ -70,10 +70,10 @@ function Section6() {
               <HiMiniDevicePhoneMobile className="mr-2" /> (11) 2391-2588
             </a>
             <a
-              href="mailto:contacto@lumideal.ar?subject=CONSULTA CREADA DESDE LA WEB"
+              href="mailto:contacto@lumideal.com.ar?subject=CONSULTA CREADA DESDE LA WEB"
               className="xl:text-[1.5rem] flex items-center"
             >
-              <AiOutlineMail className="mr-2" /> contacto@lumideal.ar
+              <AiOutlineMail className="mr-2" /> contacto@lumideal.com.ar
             </a>
             <hr className="md:w-[45vw] w-[70vw] md:mt-20 mt-4 max-md:hidden" />
           </div>

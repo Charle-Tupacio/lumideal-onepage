@@ -21,7 +21,7 @@ export async function POST(request) {
 
     const mailOption = {
       from: `${nombre} contacto@lumideal.ar`,
-      to: "contacto@lumideal.ar",
+      to: "contacto@lumideal.com.ar",
       subject: "ENVIADO DESDE LA WEB DE LUMIDEAL",
       html: msjHtml,
     };
