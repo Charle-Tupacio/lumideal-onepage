@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 import { Carousel } from "flowbite-react";
 
-export const customTheme = {
+const customTheme = {
   scrollContainer: {
     base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
     snap: "snap-x",
@@ -16,7 +15,7 @@ export const customTheme = {
 function Carousel2() {
   return (
     <div className="h-[500px] max-md:hidden w-full bg-[#E6E0DC] bg-repeat bg-[url('img/bg-patron-sec5.png')] bg-[length:100px_100px] bg-fixed">
-      <Carousel slide={false} theme={customTheme}>
+      <Carousel slide={true} theme={customTheme}>
         <div className="flex  w-full h-full">
           <img
             src="/pic-section-4/img-1.png"
@@ -34,7 +33,7 @@ function Carousel2() {
             className="w-1/3 h-full object-cover"
           />
         </div>
-        <div className="flex  w-full h-full">
+        <div className="flex w-full h-full">
           <img
             src="/pic-formu/img-formu.png"
             alt="imagen-3"
