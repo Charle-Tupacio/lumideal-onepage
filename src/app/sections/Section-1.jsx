@@ -3,8 +3,8 @@ import React from "react";
 function Section1() {
   return (
     <div>
-      <section className="md:h-[92vh] h-[75vh] w-full flex bg-cover bg-[url('img/bg-section1.png')]  bg-center">
-        <div className="flex flex-col w-full h-full justify-center items-center">
+      <section className="md:h-[92vh] h-[75vh] w-full flex bg-cover bg-[url('img/bg-section1.png')] relative  bg-center">
+        <div className="flex flex-col w-full h-full justify-center  items-center">
           {/* texto */}
           <div className="flex flex-col w-[90vw] md:w-[50vw]">
             <h1 className="text-[4.5rem]  max-xl:text-[2.7rem] fuente-1 max-md:mb-2 pr-[6vw] espacio-renglon ">
@@ -24,12 +24,15 @@ function Section1() {
             </a>
           </div>
           {/* iconos  */}
-          <div className="flex max-md:flex-col max-md:space-y-2 items-center justify-center  md:space-x-4  z-50 fixed md:bottom-8 bottom-[15%] md:left-[84vw] left-[90vw]">
+          <div
+            className="flex max-md:flex-col max-md:space-y-2 items-center justify-center  md:space-x-4  z-50 absolute
+           md:bottom-8 bottom-[5%] md:left-[85%] left-[84vw]"
+          >
             <a href="https://wa.link/n3i4ut" target="_blank">
               <img
                 src="Icono-whatsapp.png"
                 alt="icono whatsapp"
-                className="xl:w-[4vw] w-[8vw]"
+                className="xl:h-14 h-12"
               />
             </a>
             <a
@@ -39,14 +42,14 @@ function Section1() {
               <img
                 src="Icono-email.png"
                 alt="icono-email"
-                className="xl:w-[4vw] w-[8vw]"
+                className="xl:h-14 h-12"
               />
             </a>
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <img
                 src="Icono-instagram.png"
                 alt="icono-instagram"
-                className="xl:w-[4vw] w-[8vw]"
+                className="xl:h-14 h-12"
               />
             </a>
           </div>
