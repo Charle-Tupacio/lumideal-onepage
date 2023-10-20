@@ -30,7 +30,7 @@ function Section2() {
               Y EXPERIENCIA
             </h2>
             <p className=" text-[1.3rem] mt-6 md:ml-3 max-xl:text-[1rem]">
-              Prestamos servicios profecionales e integrales con un equipo con
+              Prestamos servicios profesionales e integrales con un equipo con
               más de 20 años en el mercado
             </p>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 function Section1() {
   return (
     <div>
-      <section className="md:h-[92vh] h-[75vh] w-full flex bg-cover bg-[url('img/bg-section1.png')] relative  bg-center">
+      <section className="md:h-[92vh] h-[75vh] w-full flex bg-cover bg-[url('img/bg-section1.png')]   bg-center">
         <div className="flex flex-col w-full h-full justify-center  items-center">
           {/* texto */}
           <div className="flex flex-col w-[90vw] md:w-[50vw]">
@@ -25,14 +25,14 @@ function Section1() {
           </div>
           {/* iconos  */}
           <div
-            className="flex max-md:flex-col max-md:space-y-2 items-center justify-center  md:space-x-4  z-50 absolute
-           md:bottom-8 bottom-[5%] md:left-[85%] left-[84vw]"
+            className="flex max-md:flex-col max-md:space-y-2 items-center justify-center  md:space-x-4  z-50 fixed
+           md:bottom-8 bottom-[10%] md:left-[85%] left-[88%]"
           >
             <a href="https://wa.link/n3i4ut" target="_blank">
               <img
                 src="Icono-whatsapp.png"
                 alt="icono whatsapp"
-                className="xl:h-14 h-12"
+                className="xl:h-14 h-10"
               />
             </a>
             <a
@@ -42,14 +42,14 @@ function Section1() {
               <img
                 src="Icono-email.png"
                 alt="icono-email"
-                className="xl:h-14 h-12"
+                className="xl:h-14 h-10"
               />
             </a>
             <a href="https://www.instagram.com/lumideal_sa/" target="_blank">
               <img
                 src="Icono-instagram.png"
                 alt="icono-instagram"
-                className="xl:h-14 h-12"
+                className="xl:h-14 h-10"
               />
             </a>
           </div>
